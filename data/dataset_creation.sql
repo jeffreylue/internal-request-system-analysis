@@ -1,0 +1,62 @@
+INSERT INTO internal_requests 
+(created_at, resolved_at, request_source, department, service_type, priority, resolution_time_hours, sla_hours, sla_breached)
+VALUES
+
+('2025-01-03','2025-01-04','Employee','IT','Access Request','Medium',20,24,FALSE),
+('2025-01-05','2025-01-07','Employee','HR','Payroll Issue','High',50,48,TRUE),
+('2025-01-06','2025-01-06','Executive','IT','System Upgrade','Critical',10,24,FALSE),
+('2025-01-10','2025-01-12','Employee','Finance','Reporting Error','High',55,48,TRUE),
+('2025-01-12','2025-01-13','Employee','IT','Hardware Setup','Medium',22,24,FALSE),
+('2025-01-14','2025-01-16','Executive','IT','AI Automation Review','High',30,48,FALSE),
+('2025-01-18','2025-01-20','Employee','Operations','Workflow Issue','Medium',60,48,TRUE),
+('2025-01-20','2025-01-21','Employee','IT','Access Request','Low',18,24,FALSE),
+('2025-01-22','2025-01-24','Employee','Finance','Budget Tool Error','High',52,48,TRUE),
+('2025-01-25','2025-01-27','Executive','Operations','Process Redesign','Critical',26,48,FALSE),
+
+
+('2025-02-01','2025-02-02','Employee','IT','Password Reset','Low',8,24,FALSE),
+('2025-02-02','2025-02-04','Employee','HR','Benefits Update','Medium',36,48,FALSE),
+('2025-02-03','2025-02-05','Executive','IT','AI Pilot','Critical',20,24,FALSE),
+('2025-02-04','2025-02-07','Employee','Finance','Invoice Sync Issue','High',60,48,TRUE),
+('2025-02-06','2025-02-08','Employee','Operations','Workflow Issue','High',58,48,TRUE),
+('2025-02-08','2025-02-10','Employee','IT','Laptop Config','Medium',25,24,TRUE),
+('2025-02-10','2025-02-11','Executive','Finance','Dashboard Enhancement','High',28,48,FALSE),
+('2025-02-11','2025-02-13','Employee','IT','Access Request','Medium',26,24,TRUE),
+('2025-02-13','2025-02-14','Employee','HR','Policy Clarification','Low',15,24,FALSE),
+('2025-02-15','2025-02-17','Executive','Operations','Automation Strategy','Critical',35,48,FALSE),
+
+
+('2025-03-01','2025-03-03','Employee','IT','Access Request','Medium',28,24,TRUE),
+('2025-03-02','2025-03-04','Employee','Finance','Reporting Delay','High',62,48,TRUE),
+('2025-03-03','2025-03-04','Executive','IT','System Optimization','Critical',18,24,FALSE),
+('2025-03-04','2025-03-06','Employee','Operations','Workflow Bottleneck','High',65,48,TRUE),
+('2025-03-05','2025-03-06','Employee','IT','Password Reset','Low',7,24,FALSE),
+('2025-03-06','2025-03-08','Employee','HR','Onboarding Issue','Medium',40,48,FALSE),
+('2025-03-08','2025-03-10','Executive','Finance','AI Budget Forecast','High',30,48,FALSE),
+('2025-03-09','2025-03-12','Employee','IT','Server Lag','High',70,48,TRUE),
+('2025-03-10','2025-03-11','Employee','Operations','Tool Access','Medium',30,48,FALSE),
+('2025-03-11','2025-03-12','Executive','IT','AI Risk Review','Critical',22,24,FALSE),
+
+
+('2025-04-01','2025-04-04','Employee','IT','Access Request','Medium',50,24,TRUE),
+('2025-04-02','2025-04-05','Employee','Finance','Forecast Error','High',72,48,TRUE),
+('2025-04-03','2025-04-04','Executive','IT','Automation Rollout','Critical',20,24,FALSE),
+('2025-04-04','2025-04-07','Employee','Operations','Workflow Redesign','High',80,48,TRUE),
+('2025-04-05','2025-04-06','Employee','HR','Payroll Issue','High',49,48,TRUE),
+('2025-04-06','2025-04-08','Employee','IT','Hardware Failure','High',55,48,TRUE),
+('2025-04-07','2025-04-09','Executive','Finance','Strategic Reporting','High',34,48,FALSE),
+('2025-04-08','2025-04-09','Employee','IT','Password Reset','Low',9,24,FALSE),
+('2025-04-09','2025-04-12','Employee','Operations','System Lag','High',78,48,TRUE),
+('2025-04-10','2025-04-11','Executive','IT','AI Implementation Plan','Critical',21,24,FALSE),
+
+
+('2025-05-01','2025-05-03','Employee','IT','Access Request','Medium',60,24,TRUE),
+('2025-05-02','2025-05-05','Employee','Finance','Audit Support','High',85,48,TRUE),
+('2025-05-03','2025-05-04','Executive','IT','AI Governance','Critical',18,24,FALSE),
+('2025-05-04','2025-05-07','Employee','Operations','Process Breakdown','High',90,48,TRUE),
+('2025-05-05','2025-05-07','Employee','HR','Benefits Sync','Medium',44,48,FALSE),
+('2025-05-06','2025-05-09','Employee','IT','Server Outage','Critical',95,48,TRUE),
+('2025-05-07','2025-05-08','Executive','Finance','AI Forecast Review','High',29,48,FALSE),
+('2025-05-08','2025-05-10','Employee','Operations','Workflow Delay','High',88,48,TRUE),
+('2025-05-09','2025-05-10','Employee','IT','Password Reset','Low',6,24,FALSE),
+('2025-05-10','2025-05-11','Executive','IT','AI Scaling Plan','Critical',16,24,FALSE);
