@@ -46,3 +46,33 @@ SELECT
 FROM internal_requests
 GROUP BY 1,2
 ORDER BY 2,1
+
+-- Purpose: Evaluate breach_rate_percentage and avg_resolution_time based on service_type,
+-- Insight: Majority of service types only have 1 case example,
+-- at a glance we can see there are a significant number of AI tags, which could we could sum for however, 
+-- AI tags have a low breach rate on average.
+-- Access Requests and Password Resets have higher volume - these are operational requests
+-- Recommendation: Investigate applications being used or root cause of Access Requests and Password Resets,
+-- to see if there are trends that can be aided by systematic improvement
+-- [Meta Observation]: This type of analysis would benefit from a larger dataset because we could further group examples to find trends,
+-- a potential challenge of this would be grouping if there are a lot of unique service_types
+SELECT
+    service_type,
+    COUNT(*) AS total_requests,
+    ROUND(
+        SUM(CASE WHEN sla_breached = 'Yes' THEN 1 ELSE 0 END)::decimal 
+        / COUNT(*) * 100, 2
+    ) AS breach_rate_percentage,
+	ROUND(AVG(resolution_time_hours), 2) AS avg_resolution_time
+FROM internal_requests
+GROUP BY service_type;
+
+
+
+
+
+
+
+
+
+
