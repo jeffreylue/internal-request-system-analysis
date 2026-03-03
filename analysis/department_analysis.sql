@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------------------
+/* =========================================================================
 Department-level SLA performance
 
 Objective:
@@ -12,7 +12,7 @@ both with higher breach rates than IT.
 
 Interpretation: Operational strain appears concentrated within Operations, 
 despite stable comparative volume. 
----------------------------------------------------------------------------*/
+========================================================================= */
 SELECT
     department,
     COUNT(*) AS total_requests,
@@ -24,7 +24,7 @@ SELECT
 FROM internal_requests
 GROUP BY department;
 
-/*--------------------------------------------------------------
+/* =================================================================
 Priority × Department Cross Analysis
 
 Objective: 
@@ -41,7 +41,7 @@ which represent the majority of its request volume.
 Interpretation:
 High-priority handling within Operations appears to be 
 a primary driver of system-level SLA breaches.
------------------------------------------------------------------*/
+================================================================= */
 SELECT
 	priority,
 	department,
@@ -54,7 +54,7 @@ FROM internal_requests
 GROUP BY 1,2
 ORDER BY 2,1
 
-/*-----------------------------------------------------------------------------------
+/* ==========================================================================
 Department Performance Over Time
 
 Objective: 
@@ -73,7 +73,7 @@ Recommendation:
 Conduct targeted workflow review for Operations, 
 focusing on changes implemented within the past two months
 (system, workflow, and nature of cases).
----------------------------------------------------------------------------------- */
+========================================================================== */
 SELECT
 	DATE_TRUNC('month', created_at) AS month,
 	department,
@@ -87,7 +87,7 @@ FROM internal_requests
 GROUP BY 1,2
 ORDER BY 2,1
 
-/*--------------------------------------------------------------------------
+/* ===========================================================================
 Service Type Performance Review
 
 Objective:
@@ -112,7 +112,7 @@ to identify systematic improvement opportunities.
 Meta Consideration:
 This type of analysis would benefit from a larger dataset
 because we could further group examples and trends would be more reliable.
---------------------------------------------------------------------------*/
+=========================================================================== */
 SELECT
     service_type,
     COUNT(*) AS total_requests,
