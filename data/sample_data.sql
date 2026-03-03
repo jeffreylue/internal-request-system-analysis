@@ -13,7 +13,6 @@ VALUES
 ('2025-01-20','2025-01-21','Employee','IT','Access Request','Low',18,24,FALSE),
 ('2025-01-22','2025-01-24','Employee','Finance','Budget Tool Error','High',52,48,TRUE),
 ('2025-01-25','2025-01-27','Executive','Operations','Process Redesign','Critical',26,48,FALSE),
-
 ('2025-02-01','2025-02-02','Employee','IT','Password Reset','Low',8,24,FALSE),
 ('2025-02-02','2025-02-04','Employee','HR','Benefits Update','Medium',36,48,FALSE),
 ('2025-02-03','2025-02-05','Executive','IT','AI Pilot','Critical',20,24,FALSE),
@@ -24,7 +23,6 @@ VALUES
 ('2025-02-11','2025-02-13','Employee','IT','Access Request','Medium',26,24,TRUE),
 ('2025-02-13','2025-02-14','Employee','HR','Policy Clarification','Low',15,24,FALSE),
 ('2025-02-15','2025-02-17','Executive','Operations','Automation Strategy','Critical',35,48,FALSE),
-
 ('2025-03-01','2025-03-03','Employee','IT','Access Request','Medium',28,24,TRUE),
 ('2025-03-02','2025-03-04','Employee','Finance','Reporting Delay','High',62,48,TRUE),
 ('2025-03-03','2025-03-04','Executive','IT','System Optimization','Critical',18,24,FALSE),
@@ -35,7 +33,6 @@ VALUES
 ('2025-03-09','2025-03-12','Employee','IT','Server Lag','High',70,48,TRUE),
 ('2025-03-10','2025-03-11','Employee','Operations','Tool Access','Medium',30,48,FALSE),
 ('2025-03-11','2025-03-12','Executive','IT','AI Risk Review','Critical',22,24,FALSE),
-
 ('2025-04-01','2025-04-04','Employee','IT','Access Request','Medium',50,24,TRUE),
 ('2025-04-02','2025-04-05','Employee','Finance','Forecast Error','High',72,48,TRUE),
 ('2025-04-03','2025-04-04','Executive','IT','Automation Rollout','Critical',20,24,FALSE),
@@ -46,7 +43,6 @@ VALUES
 ('2025-04-08','2025-04-09','Employee','IT','Password Reset','Low',9,24,FALSE),
 ('2025-04-09','2025-04-12','Employee','Operations','System Lag','High',78,48,TRUE),
 ('2025-04-10','2025-04-11','Executive','IT','AI Implementation Plan','Critical',21,24,FALSE),
-
 ('2025-05-01','2025-05-03','Employee','IT','Access Request','Medium',60,24,TRUE),
 ('2025-05-02','2025-05-05','Employee','Finance','Audit Support','High',85,48,TRUE),
 ('2025-05-03','2025-05-04','Executive','IT','AI Governance','Critical',18,24,FALSE),
