@@ -14,7 +14,7 @@ GROUP BY request_source;
 
 -- Purpose: Evaluate volume of requests by stakeholder and priority
 -- Insight: Executives only submit Critical and High priority cases,
--- employees rarely submit critical cases
+-- employees rarely submit Critical cases
 SELECT
 	request_source,
 	COUNT (*) as total_requests,
