@@ -1,7 +1,17 @@
--- Purpose: Evaluate total volume and SLA metrics (breach_rate_percentage, avg_resolution_time) by department
--- Insight: IT has the highest volume and lowest average resolution time,
--- while operations has the highest breach rate % and average resolution time.
--- Operations and Finance are tied for second highest volume and both have higher breach rate %s than IT.
+/*--------------------------------------------------------------------------
+Department-level SLA performance
+Objective:
+Evaluate total request volume and SLA performance by department.
+
+Findings: IT handles the highest request volume while maintaining the lowest 
+average resolution time and comparatively low breach rate.
+Operations has the highest breach rate and longest average resolution time.
+Operations and Finance are tied for second-highest volume, 
+both with higher breach rates than IT.
+
+Interpretation: Operational strain appears concentrated within Operations, 
+despite stable comparative volume. 
+---------------------------------------------------------------------------*/
 SELECT
     department,
     COUNT(*) AS total_requests,
@@ -13,11 +23,23 @@ SELECT
 FROM internal_requests
 GROUP BY department;
 
--- Purpose: I have observed that priority and departments are major factors in SLA indicators, plot both of them together to evaluate trends
--- Insight: Finance only submits High prioirty requests,
--- HR has a high breach rate but a low volume of case examples,
--- IT has a high volume of Critical requests, while having a low breach rate,
--- Operations has mostly 100% breach rate for High priority requests, which is majority of their volume. 
+/*--------------------------------------------------------------
+Section: Priority × Department Cross Analysis
+Objective: 
+Evaluate how priority distribution within departments 
+impacts SLA performance trends.
+
+Findings:
+Finance submits exclusively High-priority cases.
+HR exhibits a high breach rate but low total volume.
+IT manages a high volume of Critical cases with low breach rates.
+Operations shows near-total breach rates for High-priority cases,
+which represent the majority of its request volume.
+
+Interpretation:
+High-priority handling within Operations appears to be 
+a primary driver of system-level SLA breaches.
+-----------------------------------------------------------------*/
 SELECT
 	priority,
 	department,
@@ -30,10 +52,25 @@ FROM internal_requests
 GROUP BY 1,2
 ORDER BY 2,1
 
--- Purpose: Evaluate the key performance metrics and changes in performance over time
--- Insight: IT has the highest volume while maintaining a consistent breach rate,
--- Operations has stable case volume, but their breach rate and resolution time are increasing, indicating strain
--- Recommendation: We will need to investigate case examples, workflows, and standards to see what has changed in the past 2 months.
+/*-----------------------------------------------------------------------------------
+Section: Department Performance Over Time
+Objective: 
+Evaluate trends in volume, breach rate, and resolution time by department.
+
+Findings:
+IT maintains the highest volume with a stable breach rate.
+Operations shows stable volume but increasing breach rate 
+and resolution time over recent months.
+
+Interpretation:
+Rising breach rate without corresponding volume increase 
+suggests operational inefficiency or workflow degradation.
+
+Recommendation:
+Conduct targeted workflow review for Operations, 
+focusing on changes implemented within the past two months
+(system, workflow, and nature of cases).
+---------------------------------------------------------------------------------- */
 SELECT
 	DATE_TRUNC('month', created_at) AS month,
 	department,
@@ -47,15 +84,31 @@ FROM internal_requests
 GROUP BY 1,2
 ORDER BY 2,1
 
--- Purpose: Evaluate breach_rate_percentage and avg_resolution_time based on service_type,
--- Insight: Majority of service types only have 1 case example,
--- at a glance we can see there are a significant number of AI tags, which could we could sum for however, 
--- AI tags have a low breach rate on average.
--- Access Requests and Password Resets have higher volume - these are operational requests
--- Recommendation: Investigate applications being used or root cause of Access Requests and Password Resets,
--- to see if there are trends that can be aided by systematic improvement
--- [Meta Observation]: This type of analysis would benefit from a larger dataset because we could further group examples to find trends,
--- a potential challenge of this would be grouping if there are a lot of unique service_types
+/*--------------------------------------------------------------------------
+Section: Service Type Performance Review
+Objective:
+Evaluate SLA performance across service types to identify 
+operational bottlenecks and automation opportunities.
+
+Findings:
+Most service types contain only one case instance, 
+limiting trend reliability.
+AI-tagged cases appear frequently and maintain relatively low breach rates.
+Access Requests and Password Resets show higher volume and represent
+operationally repetitive tasks.
+
+Interpretation:
+Recurring operational requests may present opportunities 
+for workflow optimization or automation.
+
+Recommendation:
+Investigate root causes behind Access Requests and Password Resets 
+to identify systematic improvement opportunities.
+
+Meta Consideration:
+This type of analysis would benefit from a larger dataset
+because we could further group examples and trends would be more reliable.
+--------------------------------------------------------------------------*/
 SELECT
     service_type,
     COUNT(*) AS total_requests,
@@ -66,13 +119,3 @@ SELECT
 	ROUND(AVG(resolution_time_hours), 2) AS avg_resolution_time
 FROM internal_requests
 GROUP BY service_type;
-
-
-
-
-
-
-
-
-
-
