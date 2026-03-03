@@ -1,6 +1,21 @@
--- Purpose: Evaluate monthly trends in macro performance (total_requests, breached_requests,breach_rate_percentage)
--- Insight: Increasing breach rate over time,
--- while April shows a spike in breach rate.
+/* ============================================================
+Monthly Macro Performance Trends
+
+Objective:
+Evaluate overall system performance over time,
+including total request volume and SLA breach rate.
+
+Findings:
+Overall request volume remains relatively stable month-over-month.
+Breach rate shows an upward trend over time.
+April exhibits a noticeable spike in breach rate.
+
+Interpretation:
+Increasing breach rate without significant volume growth
+suggests emerging operational inefficiencies rather than capacity overload.
+The April spike may indicate a discrete operational disruption
+or workflow change requiring further review.
+============================================================ */
 SELECT 
     DATE_TRUNC('month', created_at) AS month,
     COUNT(*) AS total_requests,
@@ -13,9 +28,24 @@ FROM internal_requests
 GROUP BY 1
 ORDER BY 1;
 
--- Purpose: View 2 major request sources and evaluate monthly volume trend
--- Insight: Employees submit more than twice the number of requests compared to Executives,
--- while overall request volume remains stable over time.
+/* ============================================================
+Monthly Volume by Stakeholder 
+
+Objective:
+Evaluate whether stakeholder submission patterns
+contribute to macro performance trends.
+
+Findings:
+Employees consistently submit more than twice the number of requests
+compared to Executives.
+Overall volume remains stable across stakeholder groups.
+
+Interpretation:
+Stable stakeholder distribution suggests that
+rising breach rates are unlikely driven by shifts
+in submission behavior between Executives and Employees.
+Further departmental or priority-level analysis is required.
+============================================================== */
 SELECT 
     DATE_TRUNC('month', created_at) AS month,
     request_source,
