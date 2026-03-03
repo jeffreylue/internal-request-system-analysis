@@ -13,6 +13,7 @@ both with higher breach rates than IT.
 Interpretation: Operational strain appears concentrated within Operations, 
 despite stable comparative volume. 
 ========================================================================= */
+-- Department-level SLA performance [SQL Query] --
 SELECT
     department,
     COUNT(*) AS total_requests,
@@ -42,6 +43,7 @@ Interpretation:
 High-priority handling within Operations appears to be 
 a primary driver of system-level SLA breaches.
 ================================================================= */
+-- Priority × Department Cross Analysis [SQL Query] --
 SELECT
 	priority,
 	department,
@@ -74,7 +76,8 @@ Conduct targeted workflow review for Operations,
 focusing on changes implemented within the past two months
 (system, workflow, and nature of cases).
 ========================================================================== */
-SELECT
+-- Department Performance Over Time [SQL Query] --
+	SELECT
 	DATE_TRUNC('month', created_at) AS month,
 	department,
 	COUNT (*) AS total_cases,
@@ -113,7 +116,8 @@ Meta Consideration:
 This type of analysis would benefit from a larger dataset
 because we could further group examples and trends would be more reliable.
 =========================================================================== */
-SELECT
+-- Service Type Performance Review [SQL Query] --
+	SELECT
     service_type,
     COUNT(*) AS total_requests,
     ROUND(
