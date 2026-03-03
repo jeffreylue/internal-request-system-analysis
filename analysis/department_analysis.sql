@@ -1,5 +1,6 @@
 /*--------------------------------------------------------------------------
 Department-level SLA performance
+
 Objective:
 Evaluate total request volume and SLA performance by department.
 
@@ -24,7 +25,8 @@ FROM internal_requests
 GROUP BY department;
 
 /*--------------------------------------------------------------
-Section: Priority × Department Cross Analysis
+Priority × Department Cross Analysis
+
 Objective: 
 Evaluate how priority distribution within departments 
 impacts SLA performance trends.
@@ -53,7 +55,8 @@ GROUP BY 1,2
 ORDER BY 2,1
 
 /*-----------------------------------------------------------------------------------
-Section: Department Performance Over Time
+Department Performance Over Time
+
 Objective: 
 Evaluate trends in volume, breach rate, and resolution time by department.
 
@@ -85,7 +88,8 @@ GROUP BY 1,2
 ORDER BY 2,1
 
 /*--------------------------------------------------------------------------
-Section: Service Type Performance Review
+Service Type Performance Review
+
 Objective:
 Evaluate SLA performance across service types to identify 
 operational bottlenecks and automation opportunities.
