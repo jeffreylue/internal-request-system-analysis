@@ -14,7 +14,10 @@ FROM internal_requests
 GROUP BY department;
 
 -- Purpose: I have observed that priority and departments are major factors in SLA indicators, plot both of them together to evaluate trends
--- Insight:
+-- Insight: Finance only submits High prioirty requests,
+-- HR has a high breach rate but a low volume of case examples,
+-- IT has a high volume of Critical requests, while having a low breach rate,
+-- Operations has mostly 100% breach rate for High priority requests, which is majority of their volume. 
 SELECT
 	priority,
 	department,
