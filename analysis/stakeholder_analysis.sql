@@ -1,8 +1,19 @@
--- Purpose: Evaluate SLA performance by stakeholder group.
--- Insight: Executives submit fewer requests, maintain a 0% breach rate, 
--- and experience significantly lower average resolution times.
--- Employees’ average resolution time is more than double that of Executives.
--- Interpretation: This pattern may indicate potential stakeholder prioritization bias.
+/* ============================================================
+Section: SLA Performance by Stakeholder
+
+Objective:
+Evaluate whether SLA performance differences exist across stakeholder groups
+
+Findings:
+Executives submit fewer total requests.
+Executives maintain a 0% breach rate.
+Executives experience significantly lower average resolution times.
+Employees’ average resolution time is more than double that of Executives.
+
+Interpretation:
+Performance discrepancies suggest potential stakeholder prioritization bias
+or escalation asymmetry within workflow handling.
+============================================================ */
 SELECT
     request_source,
     COUNT(*) AS total_requests,
@@ -14,10 +25,17 @@ SELECT
 FROM internal_requests
 GROUP BY request_source;
 
--- Purpose: Evaluate request distribution by stakeholder and priority level.
--- Insight: Executives submit only Critical and High-priority cases.
--- Employees rarely submit Critical cases and account for most Medium/Low priority volume.
--- Interpretation: Priority escalation behavior may differ by stakeholder group.
+/* ===========================================================
+Objective: Evaluate prioirty classification distribution
+
+Findings:
+Executives submit only Critical and High-priority cases.
+Employees rarely submit Critical cases and account for most Medium/Low volume.
+
+Interpretation:
+Priority escalation behavior differs by stakeholder group.
+This may contribute to observed SLA performance asymmetries.
+============================================================ */
 SELECT
 	request_source,
 	COUNT (*) as total_requests,
@@ -29,12 +47,22 @@ SELECT
 FROM internal_requests
 GROUP BY request_source;
 
--- Purpose: Evaluate SLA performance by case priority 
--- (total_requests, breach_rate_percentage, avg_resolution_time).
--- Insight: High-priority cases have the highest breach rate and longest resolution time.
--- Medium-priority cases follow, while Critical cases show comparatively stronger SLA performance.
--- Interpretation: High/Medium cases may contain workflow inefficiencies or inconsistent classification.
--- Recommendation: Assess how High-priority cases are categorized to ensure accurate prioritization standards.
+/* ===========================================================
+Objective: Evaluate SLA performance by case prioirty
+
+Findings:
+High-priority cases exhibit the highest breach rate and longest resolution time.
+Medium-priority cases follow.
+Critical cases demonstrate comparatively stronger SLA adherence.
+
+Interpretation:
+High/Medium-priority workflows may contain inefficiencies,
+misclassification patterns, or resource allocation gaps.
+
+Recommendation:
+Assess High-priority classification standards to ensure
+accurate escalation and resource alignment.
+============================================================ */
 SELECT
     priority,
     COUNT(*) AS total_requests,
