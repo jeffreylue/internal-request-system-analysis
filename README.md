@@ -7,7 +7,7 @@ The objective of this analysis was to determine whether increasing SLA breaches 
 
 Rather than focusing purely on query complexity, this analysis emphasizes structured investigation, business interpretation, and actionable insight. 
 
-## Dataset[https://github.com/jeffreylue/internal-request-system-analysis/blob/main/data/sample_data.sql](url)
+## Dataset[https://github.com/jeffreylue/internal-request-system-analysis/blob/main/data/sample_data.sql](Dataset)
 The dataset used in this project was synthetically generated to simulate an internal enterprise request management system containing ticket metadata, SLA indicators, request sources, and departmental ownership.
 
 ## Business Problem
