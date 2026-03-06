@@ -46,7 +46,7 @@ Key questions include:
 <br>•	Are certain departments under operational strain?
 <br>•	Is priority classification influencing performance outcomes? 
 <br>•	Are stakeholders experiencing unequal service levels?
-
+<br>
 This analysis aims to isolate the primary drivers behind SLA degradation and identify areas requiring operational intervention. 
 
 ## Investigation Framework
