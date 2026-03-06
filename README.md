@@ -21,12 +21,12 @@ Key questions include:
 ## Investigation Framework
 My analysis followed these structured progressions:
 <br>
-<br>**1.	Monthly Macro Trends** <br>(Evaluate overall request volume and breach rates over time)<br>
-<br>**2.	Stakeholder Analysis** <br>(Compare SLA performance between Employees and Executives)<br>
-<br>**3.	Priority Level Analysis** <br>(Assess breach rates and resolution time by case priority level)<br>
-<br>**4.	Department Performance** <br>(Identify operational bottlenecks across departments)<br>
-<br>**5.	Priority x Department Interaction** <br>(Examine structural drivers of breach concentration)<br>
-<br>**6.	Service Type Review** <br>(Explore recurring operational tasks and automation opportunities)<br>
+<br>**1.	Monthly Macro Trends** <br>Evaluate overall request volume and breach rates over time<br>
+<br>**2.	Stakeholder Analysis** <br>Compare SLA performance between Employees and Executives<br>
+<br>**3.	Priority Level Analysis** <br>Assess breach rates and resolution time by case priority level<br>
+<br>**4.	Department Performance** <br>Identify operational bottlenecks across departments<br>
+<br>**5.	Priority x Department Interaction** <br>Examine structural drivers of breach concentration<br>
+<br>**6.	Service Type Review** <br>Explore recurring operational tasks and automation opportunities<br>
 <br>
 <br>This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
