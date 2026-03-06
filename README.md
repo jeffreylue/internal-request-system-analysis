@@ -32,30 +32,30 @@ My analysis followed these structured progressions:
 This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
 ## Key Findings
-•	Overall request volume has remained stable month-over-month
-•	SLA breach rates increased over time, with a notable spike in April
-•	Executive requests maintained a 0% breach rate and lower average resolution times
-•	High-priority cases exhibited the highest breach rate and longest resolution times
-•	The Operations department demonstrated increasing breach rates and resolution times despite stable volume
-•	Access Requests and Password Resets represent high-volume, repeatable operational tasks
+<br>•	Overall request volume has remained stable month-over-month
+<br>•	SLA breach rates increased over time, with a notable spike in April
+<br>•	Executive requests maintained a 0% breach rate and lower average resolution times
+<br>•	High-priority cases exhibited the highest breach rate and longest resolution times
+<br>•	The Operations department demonstrated increasing breach rates and resolution times despite stable volume
+<br>•	Access Requests and Password Resets represent high-volume, repeatable operational tasks
 
 ## Risk & Interpretation
 The increase in SLA breaches despite stable volume suggests structural inefficiencies rather than capacity overload. 
-
-Differences in stakeholder performance may indicate prioritization asymmetry or escalation bias. 
-
-Operational strain appears concentrated with specific departments and high-priority workflows.
+<br>
+<br>Differences in stakeholder performance may indicate prioritization asymmetry or escalation bias. 
+<br>
+<br>Operational strain appears concentrated with specific departments and high-priority workflows.
 
 ## Recommendations
 Immediate
-•	Conduct workflow review within Operations Department
-•	Audit High-priority case classification standards
-
+<br>•	Conduct workflow review within Operations Department
+<br>•	Audit High-priority case classification standards
+<br>
 Structural
-•	Standardize escalation criteria across stakeholders and request type 
-•	Implement ongoing SLA monitoring dashboards
-
+<br>•	Standardize escalation criteria across stakeholders and request type 
+<br>•	Implement ongoing SLA monitoring dashboards
+<br>
 Modernization Opportunity
-•	Explore AI-assisted ticket classification and validation
-•	Assess automation potential for recurring operational requests
-•	Consider system/workflow adjustments where operational strain is identified
+<br>•	Explore AI-assisted ticket classification and validation
+<br>•	Assess automation potential for recurring operational requests
+<br>•	Consider system/workflow adjustments where operational strain is identified
