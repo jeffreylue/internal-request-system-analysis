@@ -1,13 +1,13 @@
 # Internal Request Management System
 
-Project Overview
+## Project Overview
 This case study simulates an internal request management system where leadership wants to assess the sustainability and fairness of SLA performance across the organization. 
 
 The objective of this analysis was to determine whether increasing SLA breaches were driven by higher demand, stakeholder behavior, departmental strain, or structural workflow inefficiencies.
 
 Rather than focusing purely on query complexity, this analysis emphasizes structured investigation, business interpretation, and actionable insight. 
 
-Business Problem
+## Business Problem
 Leadership observed an increase in SLA breaches and wants to understand the underlying causes.
 Key questions include:
 •	Is the system experiencing demand overload?
@@ -17,7 +17,7 @@ Key questions include:
 
 This analysis aims to isolate the primary drivers behind SLA degradation and identify areas requiring operational intervention. 
 
-Investigation Framework
+## Investigation Framework
 My analysis followed these structured progressions:
 1.	Monthly Macro Trends (Evaluate overall request volume and breach rates over time)
 2.	Stakeholder Analysis (Compare SLA performance between Employees and Executives)
@@ -28,7 +28,7 @@ My analysis followed these structured progressions:
 
 This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
-Key Findings
+## Key Findings
 •	Overall request volume has remained stable month-over-month
 •	SLA breach rates increased over time, with a notable spike in April
 •	Executive requests maintained a 0% breach rate and lower average resolution times
@@ -36,14 +36,14 @@ Key Findings
 •	The Operations department demonstrated increasing breach rates and resolution times despite stable volume
 •	Access Requests and Password Resets represent high-volume, repeatable operational tasks
 
-Risk & Interpretation
+## Risk & Interpretation
 The increase in SLA breaches despite stable volume suggests structural inefficiencies rather than capacity overload. 
 
 Differences in stakeholder performance may indicate prioritization asymmetry or escalation bias. 
 
 Operational strain appears concentrated with specific departments and high-priority workflows.
 
-Recommendations
+## Recommendations
 Immediate
 •	Conduct workflow review within Operations Department
 •	Audit High-priority case classification standards
