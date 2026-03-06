@@ -32,7 +32,7 @@ My analysis followed these structured progressions:
 This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
 ## Key Findings
-<br>•	Overall request volume has remained stable month-over-month
+•	Overall request volume has remained stable month-over-month
 <br>•	SLA breach rates increased over time, with a notable spike in April
 <br>•	Executive requests maintained a 0% breach rate and lower average resolution times
 <br>•	High-priority cases exhibited the highest breach rate and longest resolution times
@@ -51,11 +51,11 @@ Immediate
 <br>•	Conduct workflow review within Operations Department
 <br>•	Audit High-priority case classification standards
 <br>
-Structural
+<br>Structural
 <br>•	Standardize escalation criteria across stakeholders and request type 
 <br>•	Implement ongoing SLA monitoring dashboards
 <br>
-Modernization Opportunity
+<br>Modernization Opportunity
 <br>•	Explore AI-assisted ticket classification and validation
 <br>•	Assess automation potential for recurring operational requests
 <br>•	Consider system/workflow adjustments where operational strain is identified
