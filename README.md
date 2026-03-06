@@ -10,11 +10,34 @@ Rather than focusing purely on query complexity, this analysis emphasizes struct
 
 ## Repository Structure
 ```
-/data              → Dataset creation script
-/analysis          → Structured SQL investigation files
-/images            → Query output screenshots
+/data
+Dataset creation script used to generate the synthetic internal request dataset.
+
+/analysis
+
+monthly_trends.sql
+- Monthly macro performance trends
+- Monthly request volume by stakeholder
+
+stakeholder_analysis.sql
+- SLA performance by stakeholder group
+- Priority volume distribution
+- SLA performance by case priority
+
+department_analysis.sql
+- Department-level SLA performance
+- Priority × Department interaction analysis
+- Department performance trends over time
+- Service type performance review
+
+/images
+Query result screenshots used to support key findings.
+
 Executive_Summary.pdf
+Concise business summary of findings and recommendations.
+
 README.md
+Project documentation and analytical framework.
 ```
 ## Business Problem
 Leadership observed an increase in SLA breaches and wants to understand the underlying causes.
