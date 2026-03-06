@@ -13,21 +13,21 @@ The dataset used in this project was synthetically generated to simulate an inte
 ## Business Problem
 Leadership observed an increase in SLA breaches and wants to understand the underlying causes.
 Key questions include:
-•	Is the system experiencing demand overload?
-•	Are certain departments under operational strain?
-•	Is priority classification influencing performance outcomes? 
-•	Are stakeholders experiencing unequal service levels?
+<br>•	Is the system experiencing demand overload?
+<br>•	Are certain departments under operational strain?
+<br>•	Is priority classification influencing performance outcomes? 
+<br>•	Are stakeholders experiencing unequal service levels?
 
 This analysis aims to isolate the primary drivers behind SLA degradation and identify areas requiring operational intervention. 
 
 ## Investigation Framework
 My analysis followed these structured progressions:
-1.	Monthly Macro Trends (Evaluate overall request volume and breach rates over time)
-2.	Stakeholder Analysis (Compare SLA performance between Employees and Executives)
-3.	Priority Level Analysis (Assess breach rates and resolution time by case priority level)
-4.	Department Performance (Identify operational bottlenecks across departments)
-5.	Priority x Department Interaction (Examine structural drivers of breach concentration)
-6.	Service Type Review (Explore recurring operational tasks and automation opportunities)
+<br>1.	Monthly Macro Trends (Evaluate overall request volume and breach rates over time)
+<br>2.	Stakeholder Analysis (Compare SLA performance between Employees and Executives)
+<br>3.	Priority Level Analysis (Assess breach rates and resolution time by case priority level)
+<br>4.	Department Performance (Identify operational bottlenecks across departments)
+<br>5.	Priority x Department Interaction (Examine structural drivers of breach concentration)
+<br>6.	Service Type Review (Explore recurring operational tasks and automation opportunities)
 
 This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
