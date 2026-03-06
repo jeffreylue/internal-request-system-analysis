@@ -1,5 +1,5 @@
 /* ============================================================
-Section: SLA Performance by Stakeholder
+SLA Performance by Stakeholder
 
 Objective:
 Evaluate whether SLA performance differences exist across stakeholder groups
@@ -26,6 +26,8 @@ FROM internal_requests
 GROUP BY request_source;
 
 /* ===========================================================
+Priority Volume Distribution
+
 Objective: Evaluate prioirty classification distribution
 
 Findings:
@@ -48,6 +50,8 @@ FROM internal_requests
 GROUP BY request_source;
 
 /* ===========================================================
+SLA Performance by Case Priority
+
 Objective: Evaluate SLA performance by case prioirty
 
 Findings:
