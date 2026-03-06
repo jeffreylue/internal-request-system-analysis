@@ -47,7 +47,7 @@ Key questions include:
 <br>•	Is priority classification influencing performance outcomes? 
 <br>•	Are stakeholders experiencing unequal service levels?
 <br>
-This analysis aims to isolate the primary drivers behind SLA degradation and identify areas requiring operational intervention. 
+<br>This analysis aims to isolate the primary drivers behind SLA degradation and identify areas requiring operational intervention. 
 
 ## Investigation Framework
 My analysis followed these structured progressions:
