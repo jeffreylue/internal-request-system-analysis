@@ -8,7 +8,8 @@ The objective of this analysis was to determine whether increasing SLA breaches 
 Rather than focusing purely on query complexity, this analysis emphasizes structured investigation, business interpretation, and actionable insight. 
 
 ## Repository Structure
-```/data              → Dataset creation script
+```
+/data              → Dataset creation script
 /analysis          → Structured SQL investigation files
 /images            → Query output screenshots
 Executive_Summary.pdf
