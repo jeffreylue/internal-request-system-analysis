@@ -7,6 +7,9 @@ The objective of this analysis was to determine whether increasing SLA breaches 
 
 Rather than focusing purely on query complexity, this analysis emphasizes structured investigation, business interpretation, and actionable insight. 
 
+## Dataset
+The dataset used in this project was synthetically generated to simulate an internal enterprise request management system containing ticket metadata, SLA indicators, request sources, and departmental ownership.
+
 ## Business Problem
 Leadership observed an increase in SLA breaches and wants to understand the underlying causes.
 Key questions include:
