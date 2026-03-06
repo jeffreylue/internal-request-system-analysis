@@ -12,7 +12,8 @@ Rather than focusing purely on query complexity, this analysis emphasizes struct
 /analysis          → Structured SQL investigation files
 /images            → Query output screenshots
 Executive_Summary.pdf
-README.md```
+README.md
+```
 
 ## [Dataset](https://github.com/jeffreylue/internal-request-system-analysis/blob/main/data/sample_data.sql)
 The dataset used in this project was synthetically generated to simulate an internal enterprise request management system containing ticket metadata, SLA indicators, request sources, and departmental ownership.
