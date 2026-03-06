@@ -59,7 +59,7 @@ My analysis followed these structured progressions:
 <br>5.	Priority x Department Interaction (Examine structural drivers of breach concentration)
 <br>6.	Service Type Review (Explore recurring operational tasks and automation opportunities)
 <br>
-This layered approach moves from macro-level performance to increasingly granular operational indicators.
+<br>This layered approach moves from macro-level performance to increasingly granular operational indicators.
 
 ## Key Findings
 •	Overall request volume has remained stable month-over-month
