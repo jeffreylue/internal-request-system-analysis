@@ -1,5 +1,5 @@
 /* ============================================================
-SLA Performance by Stakeholder
+// SLA Performance by Stakeholder //
 
 Objective:
 Evaluate whether SLA performance differences exist across stakeholder groups
@@ -27,7 +27,7 @@ FROM internal_requests
 GROUP BY request_source;
 
 /* ===========================================================
-Month-over-month SLA performance by Stakeholder
+// Month-over-month SLA performance by Stakeholder //
 
 Objective: 
 Evaluate breach rate and average resolution time changes over time grouped by request source
@@ -58,7 +58,7 @@ GROUP BY 1,2
 ORDER BY 2,1
 
 /* ===========================================================
-Priority Volume Distribution by Stakeholder
+// Priority Volume Distribution by Stakeholder //
 
 Objective: Evaluate prioirty classification distribution by stakeholder
 
@@ -84,7 +84,7 @@ FROM internal_requests
 GROUP BY request_source;
 
 /* ===========================================================
-SLA Performance by Case Priority
+// SLA Performance by Case Priority //
 
 Objective: Evaluate SLA performance by case prioirty
 
