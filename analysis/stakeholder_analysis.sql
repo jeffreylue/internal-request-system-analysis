@@ -80,7 +80,6 @@ SELECT
 	SUM (CASE WHEN priority = 'High' THEN 1 ELSE 0 END) AS total_high_cases,
 	SUM (CASE WHEN priority = 'Medium' THEN 1 ELSE 0 END) AS total_medium_cases,
 	SUM (CASE WHEN priority = 'Low' THEN 1 ELSE 0 END) AS total_low_cases
-	
 FROM internal_requests
 GROUP BY request_source;
 
