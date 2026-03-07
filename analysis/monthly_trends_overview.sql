@@ -4,6 +4,7 @@ Monthly Macro Performance Trends
 Objective:
 Evaluate overall system performance over time,
 including total request volume and SLA breach rate.
+Get a snapshot to start investigation
 
 Findings:
 Overall request volume remains relatively stable month-over-month.
