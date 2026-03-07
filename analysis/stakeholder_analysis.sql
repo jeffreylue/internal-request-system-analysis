@@ -25,6 +25,7 @@ SELECT
     ) AS breach_rate_percentage
 FROM internal_requests
 GROUP BY request_source;
+
 /* ===========================================================
 Month-over-month SLA performance by Stakeholder
 
