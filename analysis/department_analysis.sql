@@ -1,30 +1,3 @@
-/* =========================================================================
-Department-level SLA performance
-
-Objective:
-Evaluate total request volume and SLA performance by department.
-
-Findings: IT handles the highest request volume while maintaining the lowest 
-average resolution time and comparatively low breach rate.
-Operations has the highest breach rate and longest average resolution time.
-Operations and Finance are tied for second-highest volume, 
-both with higher breach rates than IT.
-
-Interpretation: Operational strain appears concentrated within Operations, 
-despite stable comparative volume. 
-========================================================================= */
--- Department-level SLA performance [SQL Query] --
-SELECT
-    department,
-    COUNT(*) AS total_requests,
-    ROUND(
-        SUM(CASE WHEN sla_breached = 'Yes' THEN 1 ELSE 0 END)::decimal 
-        / COUNT(*) * 100, 2
-    ) AS breach_rate_percentage,
-	ROUND(AVG(resolution_time_hours), 2) AS avg_resolution_time
-FROM internal_requests
-GROUP BY department;
-
 /* =================================================================
 Priority × Department Cross Analysis
 
