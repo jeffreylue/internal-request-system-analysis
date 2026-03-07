@@ -1,5 +1,5 @@
 /* ============================================================
-Monthly Macro Performance Trends
+// Monthly Macro Performance Trends //
 
 Objective:
 Evaluate overall system performance over time,
@@ -29,7 +29,7 @@ GROUP BY 1
 ORDER BY 1;
 
 /* ============================================================
-Monthly Volume by Stakeholder 
+// Monthly Volume by Stakeholder //
 
 Objective:
 Evaluate whether stakeholder submission patterns
@@ -46,6 +46,7 @@ rising breach rates are unlikely driven by shifts
 in submission behavior between Executives and Employees.
 Further departmental or priority-level analysis is required.
 ============================================================== */
+-- Monthly Volume by Stakeholder [SQL Query] --
 SELECT 
     DATE_TRUNC('month', created_at) AS month,
     request_source,
@@ -55,7 +56,7 @@ GROUP BY 1, 2
 ORDER BY 1, 2;
 
 /* =========================================================================
-Department-level SLA performance
+// Department-level SLA performance //
 
 Objective:
 Evaluate total request volume and SLA performance by department.
